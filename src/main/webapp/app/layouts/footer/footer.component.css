@@ -1,0 +1,33 @@
+/* Footer */
+
+.footercat {
+  display: flex;
+  padding-top: 25px;
+  background-size: contain;
+}
+
+.footercat p {
+  font-size: 0.8em;
+}
+
+.footercat h1 {
+  font-size: 2em;
+}
+#contact {
+  width: 28%;
+}
+
+#mes_chats {
+  width: 35%;
+}
+
+#boutique {
+  width: 31%;
+}
+
+#mes_chats img {
+  border: 1px solid #181818;
+  margin-right: 2px;
+  height: 75px;
+  width: 100px;
+}
