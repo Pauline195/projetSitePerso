@@ -15,16 +15,6 @@ Main page styles
   margin-bottom: 20px;
 }
 
-.article,
-aside {
-  text-align: justify;
-}
-
-.article {
-  margin-right: 20px;
-  flex: 3;
-}
-
 .ico_presentation {
   vertical-align: middle;
   margin-right: 8px;
@@ -37,29 +27,6 @@ aside {
   margin-right: 8px;
   width: 35px;
   height: 35px;
-}
-
-.carte {
-  vertical-align: middle;
-  width: 250px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.article p {
-  font-size: 0.8em;
-}
-
-.aside {
-  flex: 1.2;
-  position: relative;
-  background-color: #6f7172;
-  box-shadow: 0px 2px 5px #1c1a19;
-  border-radius: 5px;
-  padding: 10px;
-  color: white;
-  font-size: 0.9em;
 }
 
 #fleche_bulle {
@@ -79,10 +46,6 @@ aside {
   background: url('chatNoir.png') no repeat center;
 }
 
-.aside img {
-  margin-right: 10px;
-}
-
 /* Bannière */
 
 #banniere_image {
@@ -92,7 +55,7 @@ aside {
   border-radius: 5px;
   background: url('banniere2.jpg') no-repeat center;
   position: relative;
-  box-shadow: 4px 4px 4px #1c1a19;
+  box-shadow: 4px 4px 4px 4px #888c8c;
   margin-bottom: 25px;
 }
 
@@ -110,7 +73,7 @@ aside {
 }
 
 .bouton_rouge {
-  height: 25px;
+  height: 20px;
   position: right;
   right: 5px;
   bottom: 5px;
@@ -122,10 +85,11 @@ aside {
   padding: 3px 8px 0px 8px;
   color: white;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .bouton_rouge img {
-  border: 0;
+  border: 1px;
 }
 
 /* Navigation */
@@ -190,4 +154,37 @@ nav a:hover
     background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
     background-size: contain;
   }
+}
+
+.patteimg {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background: url('/../../content/images/Patte1.png') no-repeat center top;
+  background-size: contain;
+}
+
+/* modification taille titre */
+.titreh1 {
+  width: auto;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-left: 0.8em;
+  vertical-align: 40%;
+}
+
+.carteimg {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  background: url('carte.png') no-repeat center top;
+  background-size: contain;
+}
+
+.facebook {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url('facebook.png') no-repeat center top;
+  background-size: contain;
 }
