@@ -1,3 +1,5 @@
+
+
 <div class="row">
     <div class="col-md-3">
         <span class="hipster img-fluid rounded"></span>
@@ -9,6 +11,9 @@
         <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
     </div>
 </div>
+
+
+
 
 <!--<div id="bloc_page">
 
@@ -36,28 +41,28 @@
     <div class="section">
         <div class="article">
             <br /><div class="patteimg"></div><span class="titreh1">Qu'est-ce que c'est ?</span>
-            <p>Les chats libres du littoral est une association de protection animale, de placement de chats et de chatons abandonnés, accompagné d'un contrat (puce et stérilisation) sur le Dunkerquois (Nord, 59)</p>
+            <p>Les chats libres du littoral est une association de protection animale. Elle permet le placement de chats et de chatons abandonnés dans des familles d'accueils en attendant leurs adoptions.<br />
+                Toutes les adoptions sont accompagnées d'un contrat (puce et stérilisation).<br />
+                L'association est basée sur le Dunkerquois (Nord, 59).<br />
+                Si vous voulez aider l'association, vous pouvez faire un don en vous rendant sur l'onglet <a routerLink="dons" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true }" jhiTranslate="global.menu.dons">Faire un don</a>.</p>
             <div class="patteimg"></div><span class="titreh1">Où nous trouver ?</span><br />
             <div class="carteimg"></div>
             <p>Adresse: 4 Rue des Droits de l'Homme, <br />59430 Dunkerque</p>
         </div>
         <div class="aside">
             <h1>Les chats disponibles</h1>
-            <div id="slider">
-                <figure>
-                    <img style="width:200px; text-align center" src="/content/images/photoChat1.jpg" alt="Photographie">
-                    <img style="width:200px; text-align center" src="/content/images/photoChat02.jpg" alt="Photographie">
-                    <img style="width: 200px; text-align center" src="/content/images/photoChat3.jpg" alt="Photographie">
-                    <img style="width: 200px; text-align center" src="/content/images/photoChat4.jpg" alt="Photographie">
-                </figure>
-            </div>
+
+                <div id="slideshow">
+                    <ul id="sContent">
+                        <li><img src="/../../content/images/photoChat1.jpg" alt="Image1" /></li>
+                        <li><img src="/../../content/images/photoChat2.jpg" alt="Image2" /></li>
+                        <li><img src="/../../content/images/photoChat3.jpg" alt="Image3" /></li>
+                    </ul>
+                </div>
+
             <p>Vous pouvez nous retrouver sur notre page Facebook "Les chats libres du littoral"</p><br />
-            <div class="facebook"><a href="https://www.facebook.com/LesChatsLibresDuLittoral/" class="button"></a></div>
+            <a href="https://www.facebook.com/LesChatsLibresDuLittoral/" class="button"></a></div>
         </div>
-    </div>
-
-
-
 
 
 
@@ -96,5 +101,3 @@
        <!-- <p>
             <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.github">GitHub</a>!
         </p> -->
-
-

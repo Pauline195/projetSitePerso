@@ -319,109 +319,75 @@ aside {
 }
 */
 
-/* Slider */
-div#slider {
-  width: 50%;
-  max-width: 1000px;
-}
-
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-}
-
-div#slider figure img {
-  width: 30%;
-  height: auto;
-  float: center;
-}
-
-div#slider {
-  width: 60%;
-  max-width: 1000px;
-  overflow: hidden;
-}
-
-@keyframes slidy {
+/* Slider / tuto : https://www.youtube.com/watch?v=ZsuTciVL8PU */
+@keyframes AutoSlide {
   0% {
-    left: 0%;
+    left: 0px; /* 1ère image */
   }
-  20% {
-    left: 0%;
+  10% {
+    left: 0px; /* idem pour attente */
   }
-  25% {
-    left: -100%;
+  33% {
+    left: -200px; /* 2ème image */
   }
-  45% {
-    left: -100%;
+  43% {
+    left: -200px; /* idem pour attente */
   }
-  50% {
-    left: -200%;
+  66% {
+    left: -400px; /* 3ème image */
   }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
+  76% {
+    left: -400px; /* idem pour attente */
   }
   100% {
-    left: -400%;
+    left: 0px; /* 1ère image */
   }
 }
 
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
+@keyframes AutoSlide {
+  0%,
+  10%,
+  100% {
+    left: 0px; /* 1ère image */
+  }
+  33%,
+  43% {
+    left: -280px; /* 2ème image */
+  }
+  66%,
+  76% {
+    left: -560px; /* 3ème image */
+  }
+}
+
+#slideshow {
+  position: relative; /* le parent positionné */
+  width: 268px; /* limite en largeur (1 élément du slideshow) */
+  height: 200px; /* limite en hauteur */
+  margin: auto;
+  overflow: hidden; /* on cache l'élément qui déborde */
+}
+
+#sContent li {
+  display: inline; /* on aligne les éléments du slideshow */
+}
+
+#sContent {
+  position: absolute; /* on sort l'élémentdu flux */
+  top: 0; /* on le positionne précisément dans ... */
+  left: 0; /* l'angle haut gauche de son parent positionné */
+  width: 300%; /* ou 300% (car 3 éléments) */
+  margin: 0px;
   padding: 0;
-  font-size: 0;
-  left: 0;
-  text-align: left;
-  animation: 30s slidy infinite;
-}
 
-/* menu vertical */
-.menu-vertical {
-  background-color: #fff;
-  width: 300px;
-  position: static;
-  top: 250px;
-  bottom: 500px;
-  box-shadow: 2px 2px 2px silver;
-}
+  /* CSS3 Transition */
+  transition: left 3s;
 
-.menu-vertical .avatar {
-  background-image: url(../../content/images/chatNoir.png);
-  width: 128px;
-  height: 128px;
-  margin: 25px auto 15px auto;
-}
-
-.menu-vertical h3 {
-  text-align: center;
-  color: #444;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.menu-vertical .menu {
-  background-color: #ededed;
-  width: 270px;
-  padding: 15px;
-  margin-bottom: 5px;
-}
-
-.menu-vertical .menu a {
-  color: #e74c3c;
-  text-decorated: none;
-  font-size: 18px;
+  /* CSS3 keyframes animation */
+  animation-name: AutoSlide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */

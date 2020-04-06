@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <h6 class="text-right">{{message}}</h6>
+    <h1 class="text-capitalize text-center" jhiTranslate="dons.title">Title</h1>
+    <h5 class="text-center" jhiTranslate="dons.subtitle">Subtitle</h5>
+    <hr/>
+    <p class="text-justify" jhiTranslate="dons.content">Content</p>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+
+<!-- Formulaire -->
+<br>Si vous voulez aider l'association, vous pouvez nous envoyer des dons en remplissant le formulaire ci-dessous. </br>
+<b>On a besoin de vous !</b></p>
+<form action="traitement.php" method="post" >
+
+    <fieldset>
+        <legend> Vos coordonnées </legend>
+
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" />
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" />
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" />
+
+        <p>Si vous préférez rester anonyme cocher la case ci-dessous</p>
+        <input type="checkbox" name="anonyme" id="anonyme" />
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Votre don</legend>
+        <label for="don">Indiquez ici votre don en € :</label>
+        <input type="don" name="don" id="don" />
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Mode de paiement</legend>
+        <p>Sélectionner le mode de paiement que vous souhaitez utiliser</p>
+        <input type="checkbox" name="paypal" id="paypal" /><label for="paypal">Paypal</label>
+        <input type="checkbox" name="cheque" id="cheque" /><label for="cheque">Chèque</label>
+        <input type="checkbox" name="versement" id="versement" /><label for="versement">Versement</label>
+
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Annuler" />
+    </p>
+
+</form>
+

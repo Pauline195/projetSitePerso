@@ -7,6 +7,9 @@ import { StoreCoreModule } from 'app/core/core.module';
 import { StoreAppRoutingModule } from './app-routing.module';
 import { StoreHomeModule } from './home/home.module';
 import { StoreEntityModule } from './entities/entity.module';
+import { StoreAppContactModule } from './contact/contact.module';
+import { StoreAppAdoptionsModule } from './adoptions/adoptions.module';
+import { StoreAppDonsModule } from './dons/dons.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -21,6 +24,9 @@ import { ErrorComponent } from './layouts/error/error.component';
     StoreSharedModule,
     StoreCoreModule,
     StoreHomeModule,
+    StoreAppContactModule,
+    StoreAppAdoptionsModule,
+    StoreAppDonsModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     StoreEntityModule,
     StoreAppRoutingModule

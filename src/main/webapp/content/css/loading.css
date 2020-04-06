@@ -149,3 +149,12 @@
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  overflow: visible;
+  background: url('chat.gif') no-repeat center center;
+}
